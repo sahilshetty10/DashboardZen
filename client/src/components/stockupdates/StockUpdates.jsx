@@ -6,7 +6,6 @@ const StockUpdates = () => {
   const [symbols, setSymbols] = useState(["bitcoin", "ethereum", "ripple"]); // default symbols
   
   useEffect(() => {
-    let symbols = [];
     if (localStorage.symbols) {
       setSymbols(JSON.parse(localStorage.symbols));
     } else {
