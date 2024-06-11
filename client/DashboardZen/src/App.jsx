@@ -1,35 +1,26 @@
-import React from 'react';
-import './App.css';
-import StockUpdates from './components/StockUpdates';
-import WeatherData from './components/WeatherData';
-import NewsArticles from './components/NewsArticles';
-import ChatBox from './components/ChatBox';
-import UpcomingHolidays from './components/UpcomingHolidays';
+import React from "react";
+import StockUpdates from "./components/stockupdates/StockUpdates";
+import WeatherData from "./components/WeatherData";
+import NewsArticles from "./components/NewsArticles";
+import ChatBox from "./components/ChatBox";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div className="app">
-      <header className="app-header">
-        <h1>DashboardZen</h1>
-      </header>
-      <main className="app-main">
-        <div className="stock-section">
-          <StockUpdates />
-        </div>
-        <div className="weather-section">
-          <WeatherData />
-        </div>
-        <div className="news-section">
+    <>
+      <Navbar />
+      <main className="h-full mx-16 my-12 flex flex-col gap-8">
+        <StockUpdates />
+        <div className="h-full grid grid-cols-2 grid-rows-7 gap-8">
           <NewsArticles />
-        </div>
-        <div className="chat-section">
           <ChatBox />
-        </div>
-        <div className="holidays-section">
-          <UpcomingHolidays />
+          <div className="row-span-3 grid grid-cols-2 gap-8">
+            <WeatherData />
+            <WeatherData />
+          </div>
         </div>
       </main>
-    </div>
+    </>
   );
 }
 
