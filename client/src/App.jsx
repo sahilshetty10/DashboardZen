@@ -1,27 +1,16 @@
-import React from "react";
-import StockUpdates from "./components/stockupdates/StockUpdates";
-import WeatherData from "./components/WeatherData";
-import NewsArticles from "./components/news/NewsArticles";
-import ChatBox from "./components/ChatBox";
-import Navbar from "./components/Navbar";
+import React, { useState } from 'react'
+import Navbar from './components/Navbar'
+import Home from './components/home/Home'
+import Configure from './components/configure/Configure'
 
 function App() {
+  const [isHome, setIsHome] = useState(true)
   return (
     <>
-      <Navbar />
-      <main className="h-full mx-16 my-12 flex flex-col gap-8 overflow-auto">
-        <StockUpdates />
-        <div className="h-full grid grid-cols-2 grid-rows-7 gap-8 overflow-auto">
-          <NewsArticles />
-          <ChatBox />
-          <div className="row-span-3 grid grid-cols-2 gap-8">
-            <WeatherData />
-            <WeatherData />
-          </div>
-        </div>
-      </main>
+      <Navbar isHome={isHome} setIsHome={setIsHome}/>
+      {isHome ? <Home /> : <Configure />}
     </>
-  );
+  )
 }
 
-export default App;
+export default App

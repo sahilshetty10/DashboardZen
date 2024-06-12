@@ -1,14 +1,17 @@
 import React from "react";
 
-const Navbar = () => {
+const Navbar = ({isHome, setIsHome}) => {
+  const setHome = () => {
+    setIsHome(true);
+  }
+  const setConfigure = () => {
+    setIsHome(false);
+  }
   return (
-    <header className=" mx-16 my-8">
-      <nav className="flex justify-between font-bold">
-        <h1 className="text-3xl">DashboardZen</h1>
-        <ul className="flex gap-8">
-          <li>Configure</li>
-          <li>Profile</li>
-        </ul>
+    <header className="bg-container mx-16 my-8">
+      <nav className="flex items-center justify-between font-bold">
+        <h1 className="text-3xl cursor-pointer" onClick={setHome}>DashboardZen</h1>
+        <p className="cursor-pointer" onClick={setConfigure}>Configure</p>
       </nav>
     </header>
   );
