@@ -29,11 +29,11 @@ const StockUpdates = () => {
 
 
   return (
-    <div className="flex justify-between gap-16">      
+    <section className="flex justify-between gap-16">      
         <Stock symbol={symbols[0]} data={stockData[symbols[0]]}/>
         <Stock symbol={symbols[1]} data={stockData[symbols[1]]}/>
         <Stock symbol={symbols[2]} data={stockData[symbols[2]]}/>
-    </div>
+    </section>
   );
 };
 

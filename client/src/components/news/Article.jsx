@@ -2,12 +2,12 @@ import React from "react";
 
 const Article = ({ data }) => {
   return (
-    <article className="duration-300 rounded-[15px] hover:bg-slate-400 p-4">
-      <a href={data.url} target="_blank">
-        <h3 className="text-lg font-medium truncate">{data.title}</h3>
-        </a>
-      <p>{data.author}</p>
-    </article>
+    <a href={data.url} target="_blank" className="duration-300 p-4 rounded-[15px] mr-4 hover:pb-8 hover:shadow-lg hover:border">
+      <article>
+        <h3 className="text-lg font-medium truncate mb-2">{data.title}</h3>
+        <p>{data.author}</p>
+      </article>
+    </a>
   );
 };
 
