@@ -23,7 +23,6 @@ const WeatherData = () => {
       `http://api.weatherapi.com/v1/current.json?key=5c2cd8491d4f4186aea02645241403&q=${location}`
     );
     let data = await response.json();
-    console.log(data);
     setWeatherData(data);
   };
 

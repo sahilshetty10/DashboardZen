@@ -3,6 +3,7 @@ import StockUpdates from './stockupdates/StockUpdates'
 import NewsArticles from './news/NewsArticles'
 import ChatBox from './ChatBox'
 import WeatherData from './WeatherData'
+import UpcomingHolidays from './UpcomingHolidays'
 
 const Home = () => {
   return (
@@ -12,7 +13,7 @@ const Home = () => {
           <NewsArticles />
           <ChatBox />
           <div className="row-span-3 grid grid-cols-2 gap-8">
-            <WeatherData />
+            <UpcomingHolidays />
             <WeatherData />
           </div>
         </div>

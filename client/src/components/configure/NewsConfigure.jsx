@@ -89,10 +89,10 @@ const NewsConfigure = () => {
     <section className="flex flex-col items-center gap-8">
       <h2 className="container-title">News Configuration</h2>
       <div className="flex w-full flex-col gap-4">
-        <label htmlFor="country">Country</label>
+        <label htmlFor="newsCountry">Country</label>
         <select
-          name="country"
-          id="country"
+          name="newsCountry"
+          id="newsCountry"
           className="w-full rounded-[15px] border bg-slate-100 px-8 py-4 uppercase"
           value={selectedCountry}
           onChange={(e) => setSelectedCountry(e.target.value)}
