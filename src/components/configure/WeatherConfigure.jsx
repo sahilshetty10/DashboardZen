@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const WeatherConfigure = () => {
-    const [location, setLocation] = useState("");
+  const [location, setLocation] = useState("");
   const handleChange = (event) => {
     setLocation(event.target.value);
   };
@@ -39,7 +39,7 @@ const WeatherConfigure = () => {
   return (
     <section className="flex flex-col items-center gap-8">
       <h2 className="container-title">Weather Configuration</h2>
-      <div className="w-full relative">
+      <div className="relative w-full">
         <label htmlFor="weatherLocation">Location</label>
         <input
           type="text"

@@ -28,7 +28,7 @@ const HolidaysConfigure = () => {
   };
 
   return (
-    <section className="flex flex-col items-center gap-8 w-full">
+    <section className="flex w-full flex-col items-center gap-8">
       <h2 className="container-title">Holidays Configuration</h2>
       <div className="flex w-full flex-col gap-4">
         <label htmlFor="holidayCountry">Country</label>

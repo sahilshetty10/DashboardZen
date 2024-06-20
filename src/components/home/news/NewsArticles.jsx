@@ -31,7 +31,7 @@ const NewsArticles = () => {
 
   const fetchNews = async (country, category) => {
     let response = await fetch(
-      `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=d5b9080f63c44d35aec2792dc160e348`
+      `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=d5b9080f63c44d35aec2792dc160e348`,
     );
     let data = await response.json();
     setNewsData(data);
@@ -41,9 +41,9 @@ const NewsArticles = () => {
     return <div>Loading...</div>;
   } else {
     return (
-      <section className="row-span-7 bg-container flex flex-col gap-8 h-full">
+      <section className="bg-container row-span-7 flex h-full flex-col gap-8">
         <h2 className="container-title">News</h2>
-        <div className="h-full overflow-auto flex flex-col gap-8">
+        <div className="flex h-full flex-col gap-8 overflow-auto">
           {newsData.articles.map((article, index) => {
             return <Article key={index} data={article} />;
           })}

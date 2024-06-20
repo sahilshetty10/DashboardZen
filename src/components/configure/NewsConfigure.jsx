@@ -82,7 +82,7 @@ const NewsConfigure = () => {
   const handleSave = () => {
     localStorage.newsCountry = selectedCountry;
     localStorage.newsCategory = selectedCategory;
-    alert("Configuration saved successfully")
+    alert("Configuration saved successfully");
   };
 
   return (

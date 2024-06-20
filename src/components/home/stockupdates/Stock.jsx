@@ -12,11 +12,13 @@ const Stock = ({ symbol, data }) => {
   let change = data.usd_24h_change.toFixed(2);
 
   return (
-    <div className="bg-container flex-1 flex justify-between uppercase">
+    <div className="bg-container flex flex-1 justify-between uppercase">
       <h2 className="text-xl font-semibold">{symbol} / USD</h2>
-      <div className="flex gap-4 items-center font-bold">
+      <div className="flex items-center gap-4 font-bold">
         <p className="text-xl">{price}</p>
-        <p className={change > 0 ? "text-green-500" : "text-red-500"}>{change}%</p>
+        <p className={change > 0 ? "text-green-500" : "text-red-500"}>
+          {change}%
+        </p>
       </div>
     </div>
   );

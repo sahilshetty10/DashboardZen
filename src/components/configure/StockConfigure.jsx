@@ -67,7 +67,7 @@ const StockConfigure = () => {
 
   const handleSave = () => {
     localStorage.symbols = JSON.stringify(symbols);
-    alert("Configuration saved successfully")
+    alert("Configuration saved successfully");
   };
 
   return (
