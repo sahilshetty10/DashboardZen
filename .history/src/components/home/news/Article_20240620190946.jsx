@@ -12,7 +12,6 @@ const Article = ({ data }) => {
         <p>{data.author}</p>
       </article>
     </a>
-    
   );
 };
 
