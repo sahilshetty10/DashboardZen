@@ -14,7 +14,6 @@ const UpcomingHolidays = () => {
     }
   }, []);
 
-  
   const fetchHolidays = async (country) => {
     let response = await fetch(
       `https://date.nager.at/api/v3/NextPublicHolidays/${country}`,
