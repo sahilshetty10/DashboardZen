@@ -21,7 +21,7 @@ const ChatBox = () => {
   const getAiResponse = async (query) => {
     try {
       const response = await fetch(
-        "https://c117-2607-fea8-8443-2b00-e12e-9290-5d5c-3ba6.ngrok-free.app/api/chatgpt/ask",
+        "https://901de120-80e1-47be-b8a5-bbbc8f2fc452-00-2h1a0hsuensjs.riker.replit.dev/api/chatgpt/ask",
         {
           method: "POST",
           headers: {
