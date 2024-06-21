@@ -17,7 +17,6 @@ const Home = () => {
           <WeatherData />
         </div>
       </div>
-      
     </main>
   );
 };
